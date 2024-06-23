@@ -1,0 +1,31 @@
+{
+    "name": "CYBER WORM SERVER",
+    "description": "Mobile Phone Hacking Server Deploy in heroku",
+    "logo": "https://graph.org/file/5f25e7be3d5ae407d8593.jpg",
+    "keywords": [
+    "telegram",
+    "bot",
+    "telegram-bot",
+    ],
+    "env": {
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "id": {
+        "description": "Telegram User I'd from @UserBotInfoBot",
+        "value": "",
+        "required": true
+      },
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
